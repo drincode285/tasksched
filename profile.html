@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskSched - Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+    <script src="profile.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Profile</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="profile-container">
+            <div class="profile-picture">
+                <img id="profile-img" src="default-avatar.jpg" alt="Profile Picture">
+                <input type="file" id="picture-input" style="display: none;" accept="image/*">
+                <button class="edit-picture">Edit Picture</button>
+            </div>
+            <div class="profile-info">
+                <h3 id="username">John Doe</h3>
+                <p id="email"></p>
+                <form id="profile-form">
+                    <label for="name">Name:</label>
+                    <input id="name" type="text" value="John Doe">
+                    <label for="email">Email:</label>
+                    <input id="email-input" type="email" value="john.doe@example.com">
+                    <button class="save-button">Save Changes</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

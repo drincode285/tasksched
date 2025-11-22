@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskSched - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="dashboard.css">
+    
+    <script src="script.js" defer></script>
+    <script src="calendar.js" defer></script>
+    <script src="dashboard.js" defer></script>
+    <script src="notification.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Dashboard</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+            <div class="notification-container">
+                <button id="notification-btn" class="notification-btn">
+                    <img src="notif-icon.png" alt="Notifications" class="bell-icon">
+                    <span id="notification-count">0</span>
+                </button>
+            <div id="notification-dropdown" class="notification-dropdown">
+                <h4>Notifications</h4>
+                <ul id="notification-list"></ul>
+                <p id="no-notifications">No new notifications</p>
+            </div>
+        </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="dashboard-overview">
+            <h3>Upcoming Tasks and Events</h3>
+            <ul id="upcoming-tasks-events"></ul>
+        </section>
+        <section class="statistics">
+            <h3>Task and Event Statistics</h3>
+            <canvas id="task-event-statistics" width="400" height="400"></canvas>
+        </section>
+        <section class="calendar-view">
+            <h3>Calendar</h3>
+            <div id="calendar">
+                <div class="calendar-container">
+                    <div class="calendar-header">
+                        <button id="prev-month-btn">Prev</button>
+                        <h4 id="month-year"></h4>
+                        <button id="next-month-btn">Next</button>
+                    </div>
+                    <table id="calendar-table">
+                        <thead>
+                            <tr>
+                                <th>Sun</th>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                            </tr>
+                        </thead>
+                        <tbody id="calendar-body"></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

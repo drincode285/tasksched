@@ -1,0 +1,73 @@
+:root {
+  --primary-color: #90b2ff;
+  --secondary-color: #eff3fe;
+  --text-color: #4c4c4c;
+}
+.calendar-container {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid  var(--text-color);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#month-year {
+  text-align: center;
+  flex-grow: 1;
+  color: #80b2ff;
+}
+
+#calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+#calendar-table th, #calendar-table td {
+  border: 1px solid  #4c4c4c;
+  padding: 5px;
+  text-align: center;
+  width: 14.28%;
+}
+
+#calendar-table th {
+  background-color: var(--secondary-color);
+}
+
+#calendar-table td {
+  height: 30px;
+  vertical-align: top;
+  border-radius: 5px;
+}
+
+.calendar-header button {
+  background-color: #B2D1FF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.calendar-header button:hover {
+  background-color: #8bc1f2;
+}
+
+#calendar-table td:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+#calendar-table .today {
+  background-color: #66d9ef;
+  color: #fff;
+}
+

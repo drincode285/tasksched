@@ -1,0 +1,78 @@
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+    max-width: 900px;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+    flex: 0 0 200px;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.edit-picture {
+    background-color: #80b2ff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-info {
+    flex: 1 1 auto;
+}
+
+.profile-info h3 {
+    margin-top: 0;
+}
+
+#profile-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#profile-form label {
+    margin-bottom: 0.5rem;
+}
+
+#profile-form input {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.save-button {
+    background-color: #80b2ff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+        max-width: 900px;
+    }
+    .profile-picture {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+}
